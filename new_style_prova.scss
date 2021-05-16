@@ -1,0 +1,550 @@
+*{
+  Padding: 0;
+  Margin: 0;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  background-color: lightgray;
+
+  header{
+    background-color: #d4c29e;
+
+    .background{
+      width: 100%;
+  
+      .titolo_div{
+        display: inline-flexbox;
+        overflow: hidden;
+        
+        .logo{
+          float: left;
+          width: 20%;
+          height: auto;
+          margin: 20px;
+        }
+        
+        .titolo{
+          font-family: 'IM Fell English SC';
+          color: #960018;
+          text-align: center;
+          font-size: 150px;
+          width: 70%;
+          float: left;
+          padding: 30px;
+        }
+     
+      }
+  
+      .topnav{
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        display: inline;
+        background-color: #d4c29e;
+  
+        a{
+          float: left;
+          text-align: center;
+          text-decoration: none;
+          padding: 20px;
+          font-size: 20px;
+          height: 100%;
+        }
+
+        a.active{
+          background-color: #960018;
+          color: whitesmoke;
+        }
+
+        a.inactive{
+          background-color: whitesmoke;
+          color: #960018;
+          text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff,
+                       0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff,
+                       1px -1px 0 #fff, -1px 1px 0 #fff;
+        }
+
+        a.inactive:hover{
+          color: white;
+          background-color: #960018;
+          text-shadow: 2px 0 0 #960018, -2px 0 0 #960018, 0 2px 0 #960018,
+                       0 -2px 0 #960018, 1px 1px #960018, -1px -1px 0 #960018,
+                       1px -1px 0 #960018, -1px 1px 0 #960018;
+        }
+
+        .login_div{
+          box-sizing: border-box;
+          position: relative;
+          float: right;
+          width: 40%;
+
+          .info_login{
+            background-color: white;
+          }
+
+          input{
+            width: 23%;
+            margin: 2px;
+            padding: 5px;
+            /* display: inline-block; */
+            border: 3px solid #ccc;
+            box-sizing: border-box;
+          }
+
+          button, input[type="button"]{
+            width: 23%;
+            border: 3px solid #ccc;
+            box-sizing: border-box;
+            background-color: #960018;
+            color: white;
+            padding: 5px;
+            margin: 2px;
+          }
+
+          .error{
+            font-size: 14px;
+            color: #960018;
+            background-color: whitesmoke;
+            text-align: center;
+            width: 80%;
+            margin-left: 10%;
+          }
+        }
+
+        .logout_div{
+          box-sizing: border-box;
+          position: relative;
+          float: right;
+          width: 40%;
+
+          .info_login{
+            background-color: white;
+            width: 60%;
+            float: right;
+            margin: 10px;
+          }
+
+          button{
+            float: right;
+            border: 3px solid #ccc;
+            box-sizing: border-box;
+            background-color: #960018;
+            color: white;
+            padding: 5px;
+            margin: 2px;
+          }
+        }
+
+      }
+    }
+  }
+
+
+  .content{
+    position: relative;
+    margin-top: 60px;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: auto;
+    float: left;
+    margin-bottom: 30px;
+  }
+
+  .home_container{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+
+    .home_menu{
+      float: left;
+      width: 30%;
+      height: 100%;
+
+      .home_list{
+        padding: 5px;
+        margin: 5px;
+        list-style-type: none;
+
+        .capitolo_list{
+          font-size: 20px;
+          color: #960018;
+          width: 80%;
+          text-align: center;
+          text-decoration: none;
+        }
+        
+        .capitolo_list:hover{
+          background-color: whitesmoke;
+        }
+
+        .sottocapitolo_content_list{
+          text-decoration: none;
+          list-style-type: none;
+          padding: 5px;
+          margin: 5px;
+          li.sottocapitolo_list{
+            font-size: 15px;
+            margin: 2px;
+          }
+        }  
+      }
+    }
+
+    .home_content{
+      float: left;
+      width: 70%;
+      height: 100%;
+
+      .home_description{
+        background-color: whitesmoke;
+        margin: 5%;
+        text-align: center;
+        font-size: 20px;
+        padding: 5%;
+        border-radius: 35px;
+      }
+
+      .post_container{
+        ul{
+          list-style-type: none;
+          margin-left: 5%;
+          li{
+            width: 80%;
+            margin: 2%;
+            padding: auto;
+            background-color: whitesmoke;
+            font-size: 20px;
+            a{
+              padding: 10px;
+              text-decoration: none;
+              color: #960018;
+            }
+          }
+        }
+      }
+
+      .post_titolo{
+        color: #960018;
+        text-align: center;
+        font-size: 32px;
+        margin: 10px;
+      }
+
+      .post_singolo_contenitore{
+        background-color: #efe9dc;
+        border: 1px black solid;
+        margin: 2% 5%;
+        padding: 3%;
+        .post_titolo{
+          color: #960018;
+          text-align: center;
+          font-size: 32px;
+          margin: 20px;
+        }
+  
+        .post_data{
+          font-style: italic;
+          font-size: 16px;
+          text-align: center;
+        }
+  
+        .post_testo{
+          font-size: 18px;
+          padding: 2%;
+          text-align: left;
+        }
+      }
+    
+
+    }
+  }
+
+  .content_reg{
+    margin: 50px 0;
+
+    .sottotitolo{
+      color: #960018;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 0.5%;
+    }
+
+    .form_reg{
+      justify-content: center;
+      margin-left: 30%;
+      margin-right: 30%;
+
+      .error{
+        color: #960018;
+        background-color: whitesmoke;
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .success{
+        color: darkgreen;
+        background-color: whitesmoke;
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .table_reg{
+        align-self: center;
+        width: 100%;
+        height: 100%;
+
+        .reg_dati_style{
+          width: 100%;
+          margin: 2px;
+          padding: 5px;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+
+      }
+
+      .btn_reg_style{
+        background-color: #960018;
+        color: white;
+        font-size: 20px;
+        width: 100%;
+        padding: 5px;
+        margin: 2px;
+      }
+    }
+  }
+
+  .content_statPage{
+    align-items: center;
+    margin: 2%;
+    height: 100%;
+
+    
+
+    .titolo_statPage{
+      color: #960018;
+      text-align: center;
+      font-size: 32px;
+    }
+
+    .form_statPage{
+      margin: 0.5%;
+      width: 100%;
+      text-align: center;
+      .line_form_statPage{
+        position: relative;
+        width: 100%;
+        height: 90%;
+        float: left;
+        align-items: inherit;
+
+        .description_statPage{
+          color: #960018;
+          font-size: 20px;
+          margin: 5px;
+        }
+  
+        .column_1_3{
+          width: 30%;
+          height: auto;
+          float: left;
+          margin: 1.5%;
+        }
+  
+        input[type="text"]{
+          text-align: center;
+          width: 100%;
+          height: 30px;
+          font-size: 20px;
+        }
+  
+        input[type="number"]{
+          width: 100%;
+          text-align: center;
+          height: 30px;
+          font-size: 20px;
+        }
+
+        .button_form_statPage{
+          text-align: center;
+          background-color: #960018;
+          color: white;
+          font-size: 20px;
+          margin-top: 30px;
+          margin-left: 30%;
+          margin-right: 30%;
+          width: 40%;
+          padding: 10px;
+        }
+      }
+    }
+
+  }
+
+  .profile_container{
+    width: 100%;
+    height: auto;
+
+    .image_container{
+      max-height: auto;
+      width: 30%;
+      height: auto;
+      float: left;
+      text-align: center;
+      padding: 2% 2% 2% 3%;
+
+      .foto_personaggio{
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      button{
+        background-color: #960018;
+        color: white;
+        width: 50%;
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 20px;
+        margin-left: 25%;
+        margin-right: 25%;
+      }
+    }
+
+    .dati_personaggio{
+      position: relative;
+      float: left;
+      width: 60%;
+      height: auto;
+      padding: 2.5%;
+
+      .casellina_personaggio{
+        position: relative;
+        width: 94%;
+        height: auto;
+        background-color: whitesmoke;
+        float: left;
+        margin: 5px;
+        padding: 3%;
+        font-size: 30px;
+
+        .descrizioni_personaggio{
+          color: #960018;
+          float: left;
+          width: 30%;
+          position: relative;
+        }
+
+        .nome_personaggio{
+          color: black;
+          float: left;
+          width: 70%;
+          position: relative;
+        }
+      }
+
+      .casellina_personaggio_3{
+        position: relative;
+        width: 31%;
+        height: auto;
+        float: left;
+        background-color: whitesmoke;
+        text-align: center;
+        margin: 5px;
+        padding: 2% 0.5%;
+        
+        .descrizioni_personaggio{
+          color: #960018;
+          font-size: 25px;
+          padding: 5px;
+        }
+
+        .numero_personaggio{
+          color: black;
+          font-size: 25px;
+        }
+
+        .input_personaggio{
+          color: black;
+          font-size: 25px;
+          width: 40%;
+          margin-left: 30%;
+          margin-right: 30%;
+          text-align: center;
+        }
+      }
+
+      .casellina_personaggio_6{
+        position: relative;
+        width: 16%;
+        float: left;
+        height: auto;
+        background-color: whitesmoke;
+        margin: 2px;
+        text-align: center;
+
+        .descrizioni_personaggio{
+          color: #960018;
+          font-size: 25px;
+          padding: 5px;
+        }
+
+        .numero_personaggio{
+          color: black;
+          font-size: 25px;
+        }
+
+        .mod_personaggio{
+          font-style: italic;
+          font-size: 16px;
+        }
+      }
+
+      .btn_profilo{
+        background-color: #960018;
+        color: white;
+        width: 40%;
+        font-size: 32px;
+        padding: 15px;
+        margin: 20px;
+        text-align: center;
+        margin-left: 30%;
+        margin-right: 30%;
+      }
+    }
+  }
+
+  .content_admin{
+    width: 100%;
+    height: auto;
+    button{
+      background-color: #960018;
+      color: white;
+      width: 40%;
+      height: 300px;
+      float: left;
+      margin: 5%;
+      font-size: 32px;
+    }
+  }
+
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #960018;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+}

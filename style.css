@@ -1,0 +1,552 @@
+*{
+  Padding: 0;
+  Margin: 0;
+}
+
+.background {
+  overflow: hidden;
+  background-color: #d4c29e;
+}
+
+/*Styling del titolo e del logo*/
+.titolo_div{
+  display: inline-flexbox;
+  overflow: hidden;
+}
+
+.titolo{
+  text-align: center;
+  font-size: 15vh;
+  font-family: 'IM Fell English SC';
+  color: #960018;
+  width: 100%;
+  margin-right: 200px;
+  text-decoration: none;
+}
+
+.sottotitolo{
+  text-align: center;
+  font-size: 4vh;
+  font-family: 'IM Fell English SC';
+  color: #960018;
+  width: 100%;
+  text-decoration: none;
+}
+
+.logo_container{
+  float: left;
+  height: 20%;
+  width: 20%;
+}
+
+.logo{
+  border-radius: 50%;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* 
+  Styling della barra di navigazione della pagina
+*/
+
+.topnav{
+  display: inline;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 4vh;
+  height: 100%;
+}
+
+.topnav a.inactive:hover {
+  background-color: #960018;
+  color: white;
+}
+
+.topnav a.active {
+  color: #960018;
+}
+
+.topnav a.inactive {
+  color: white;
+}
+
+.topnav a.active:hover{
+  background-color: white;
+}
+/* Styling del form login */
+.login_div{
+  position: absolute;
+  margin: 10px;
+  right: 0%;
+  vertical-align: middle; 
+  width: 60%;
+}
+
+/*
+.login_title{
+  color: #960018;
+}
+*/
+
+.login_dati_style {
+  width: 20%;
+  margin: 2px;
+  padding: 5px;
+  /* display: inline-block; */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  float: right;
+}
+
+.login_dati_btn_style{
+  background-color: #960018;
+  float: right;
+  color: white;
+  width: 20%;
+  padding: 5px;
+  margin: 2px;
+}
+
+.info_login{
+  color: #960018;
+  background-color: white;
+  width: 25%;
+  text-align: center;
+  float: right;
+  padding : 5px;
+  margin: 2px;
+  margin-right: 5px;
+}
+
+/* 
+  Styling del "body"
+*/
+.content{
+  background-color: lightgray;
+  bottom: 0px;
+}
+
+body{
+  background-color: black;
+}
+
+/* 
+  Styling del footer
+*/
+.piedipagina{
+  background-color: #960018;
+  float: left;
+  color: white;
+  position: relative;
+  width: 99.2%;
+  bottom: 0px;
+  text-align: center;
+  padding: 5px;
+}
+
+/* 
+  Styling della home
+*/
+.home_container{
+  overflow: hidden;
+  width: 100%;
+  /* background-color: black; */
+}
+
+.home_menu{
+  position: relative;
+  float: left;
+  width: 30%;
+  /* background-color: white; */
+}
+
+.home_content{
+  position: relative;
+  float: left;
+  width: 70%;
+  height: 600px;
+  /* background-color: yellow; */
+}
+
+.home_list{
+  /* background-color: greenyellow; */
+  padding: 5px;
+  margin: 5px;
+  list-style-type: none;
+}
+
+.capitolo_list{
+  font-size: 20px;
+  color: #960018;
+  width: 80%;
+  text-decoration: none;
+}
+
+.sottocapitolo_list{
+  font-size: 15px;
+}
+
+.sottocapitolo_list > li{
+  padding: 5px;
+}
+
+.capitolo_list :hover{
+  background-color: white;
+}
+
+.post_container{
+  width: 100%; /* for instance */
+  display: table;
+  table-layout: fixed;
+}
+
+.post_container ul{
+  display: table-row;
+}
+
+.post_container ul li{
+  display: table-cell;
+}
+
+.post_titolo{
+  font-size: 30px;
+  color: #960018;
+  text-align: center;
+}
+
+.post_1_3{
+  float: left;
+  background-color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  /* width: 20%; */
+  /* height: 33%; */
+}
+
+.post_link{
+  text-decoration: none;
+  color: #960018;
+}
+
+.post_data{
+  font-size: 14px;
+  font-style: italic;
+  margin-top: -10px;
+}
+
+.post_testo{
+  background-color: whitesmoke;
+  border-radius: 35px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.post_contenitore{
+  text-align: center;
+}
+
+.home_description{
+  font-size: 25px;
+  text-align: center;
+  margin: 10%;
+  max-height: 600px;
+  background-color: whitesmoke;
+  border-radius: 35px;
+  padding: 3px;
+}
+
+
+/* Styling della page registraazione.php */
+.reg_dati_style{
+  width: 100%;
+  margin: 2px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form_reg{
+  display: flex;
+  justify-content: center;
+}
+
+.btn_reg_style{
+  background-color: #960018;
+  color: white;
+  width: 100%;
+  padding: 5px;
+  margin: 2px;
+}
+
+.table_reg{
+  align-self: center;
+  width: 100%;
+}
+
+/* Styling generic error */
+.error{
+  color: #960018;
+  background-color: white;
+  text-align: center;
+  font-size: 26px;
+  /* margin-left: 20%;
+  margin-right: 20%; */
+  width: 100%;
+}
+
+.error_login{
+  color: #960018;
+  background-color: white;
+  text-align: center;
+  font-size: 13px;
+  float: right;
+}
+
+.success{
+  color: darkgreen;
+  background-color: white;
+  text-align: center;
+  font-size: 26px;
+  width: 100%;
+}
+
+.success_login{
+  color: darkgreen;
+  background-color: white;
+  text-align: center;
+  font-size: 13px;
+  float: right;
+}
+
+/* Styling statPage */
+
+.content_statPage{
+  margin: 2%;
+  height: 90%;
+  /* background-color: azure; */
+  align-items: center;
+}
+
+.titolo_statPage{
+  color: #960018;
+  text-align: center;
+  font-size: 30px;
+  padding: 3px;
+  margin: 3px;
+}
+
+.form_statPage{
+   
+  /* background-color: chocolate; */
+  overflow: hidden;
+}
+
+.description_statPage{
+  font-size: 25px;
+  text-align: center;
+  color: #960018;
+}
+
+.line_form_statPage{
+  /* background-color: cornflowerblue; */
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.statPage_input_style{
+  padding: 3px;
+  margin: 2px;
+}
+
+.column_1_2{
+  width: 48%;
+  align-items: center;
+  /* background-color: beige; */
+  margin: 3px;
+  padding: auto;
+  float: left;
+}
+
+.column_1_3{
+  width: 32%;
+  text-align: center;
+  /* background-color: beige; */
+  margin: 3px;
+  padding: auto;
+  float: left;
+}
+
+.column_1_6{
+  width: 16%;
+  text-align: center;
+  /* background-color: beige; */
+  margin: 3px;
+  padding: auto;
+  float: left;
+}
+
+.button_form_statPage{
+  text-align: center;
+  background-color: #960018;
+  color: white;
+  font-size: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  position: relative;
+  padding: 10px;
+}
+
+/* Styling generale */
+input[type=text], input[type=password], input[type=number], input[type=mail] {
+  text-align: center;
+}
+
+/* Styling della pagina profilo del personaggio */
+.image_container{
+  float: left;
+  position: relative;
+  max-width: 300px;
+  max-height: auto;
+  width: 30%;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.foto_personaggio{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.btn_profilo_style{
+  background-color: #960018;
+  color: white;
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.profile_container{
+  overflow: hidden;
+  width: 100%;
+}
+
+.dati_personaggio{
+  float: left;
+  width: 60%;
+  padding: 20px;
+  position: relative;
+}
+
+.descrizioni_personaggio{
+  color: #960018;
+  font-size: 100%;
+}
+
+.nome_personaggio{
+  color: black;
+  font-size: 20px;
+}
+
+.casellina_personaggio{
+  background-color: whitesmoke;
+  width: 20%;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  float: left;
+  border-radius: 0px 0px 60% 60% / 0px 0px 70% 70%;
+  border-left: solid transparent 8px;
+  border-right: solid transparent 8px;
+  /* border: #960018 5px solid; */
+}
+
+.casellina_personaggio_3{
+  background-color: whitesmoke;
+  width: 28%;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  float: left;
+  border-radius: 20px 20px 90% 90%;
+  border-left: solid transparent 8px;
+  border-right: solid transparent 8px;
+}
+
+.casellina_personaggio_6{
+  background-color: whitesmoke;
+  width: 12%;
+  text-align: center;
+  padding: 8px;
+  margin: 5px;
+  float: left;
+  /* border-radius: 20px 20px 90% 90%; */
+  border-radius: 0% 0% 50% 50% / 0% 0% 78% 78%;;
+  border-left: solid transparent 8px;
+  border-right: solid transparent 8px;
+  border: solid #181616;
+}
+
+.input_personaggio{
+  width: 30%;
+  height: 24px;
+  font-size: 20px;
+  margin: 7.5px;
+}
+
+.numero_personaggio{
+  color: black;
+  font-size: 30px;
+}
+
+.mod_personaggio{
+  color: black;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.btn_profilo{
+  background-color: #960018;
+  float: right;
+  margin-right: 35px;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Styling pagina admin */
+.content_admin{
+  background-color: lightgrey;
+  width: 100%;
+  height: auto;
+  /* position: absolute; */
+}
+
+.admin_inserisci{
+  background-color: #960018;
+  color: whitesmoke;
+  float: left;
+  font-size: 30px;
+  width: 40%;
+  height: 200px;
+  margin: 30px;
+}

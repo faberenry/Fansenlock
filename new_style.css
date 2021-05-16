@@ -1,0 +1,115 @@
+
+
+body{
+  background-color: black;
+}
+
+/* header style */
+header{
+  background-color: #d4c29e;
+}
+
+.background{
+  /* align-items: flex-start; */
+  width: 100%;
+}
+
+.titolo_div{
+  display: inline-flexbox;
+  overflow: hidden;
+}
+
+.logo{
+  float: left;
+  width: 20%;
+  height: auto;
+  margin: 20px;
+}
+
+.titolo{
+  font-family: 'IM Fell English SC';
+  color: #960018;
+  text-align: center;
+  font-size: 150px;
+  width: 70%;
+  float: left;
+  padding: 30px;
+}
+
+.topnav{
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  display: inline;
+  background-color: #d4c29e;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  height: 100%;
+}
+
+.topnav a.inactive :hover{
+  color: whitesmoke;
+  background-color: #960018;
+}
+
+.topnav a.active {
+  background-color: #960018;
+  color: whitesmoke;
+}
+
+.topnav a.inactive {
+  color: #960018;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+
+.login_div input, 
+.login_div button,
+.logout_div button{
+  width: 23%;
+  margin: 2px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login_div .error{
+  font-size: 14px;
+  color: #960018;
+  background-color: whitesmoke;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.login_div, .logout_div{
+  box-sizing: border-box;
+  position: relative;
+  float: right;
+  width: 40%;
+}
+
+.login_div .info_login, 
+ .logout_div .info_login {
+  background-color: white;
+}
+
+.login_div button,
+.login_div input[type="button"],
+.logout_div button{
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+  background-color: #960018;
+  color: white;
+  padding: 5px;
+  margin: 2px;
+}
+
+
+

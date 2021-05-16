@@ -1,0 +1,8 @@
+  $bc = 2;
+            $stmt = $conn->prepare("INSERT INTO stat('codStat', 'forza', 'destrezza', 'carisma', 'costituzione', 
+                                  'intelligenza', 'saggezza', 'ca', 'velocita', 'vita', 'percezione_passiva','bonus_competenza')
+                                  VALUES (?,?,?,?,?,?,?,?,?,?,?,?);");
+            $stmt->bind_param("siiiiiiiiiii", "stat_".$nome."_".$cognome, $_POST['forzaPersonaggio'], 
+                             $_POST['destrezzaPersonaggio'], $_POST['carismaPersonaggio'], $_POST['costituzionePersonaggio'],
+                             $_POST['intelligenzaPersonaggio'], $_POST['saggezzaPersonaggio'], $_POST['caPersonaggio'],
+                             $_POST['velocitaPersonaggio'], $_POST['vitaPersonaggio'], $percezionePassiva, $bc);
